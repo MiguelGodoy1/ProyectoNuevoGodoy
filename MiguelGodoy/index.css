@@ -1,0 +1,90 @@
+body{
+    font-family:"DM Sans", sans-serif;
+    background-color:rgb(16, 28, 29);/*Fondo diferente al negro*/
+    color: rgb(190, 220, 246);/*letras claras*/
+    margin: 0;/*margenes y padding 0*/
+    padding: 0;  
+}
+h1,h2{
+    font-family: "Manrope",sans-serif;
+}
+header{
+    top:0;
+    z-index: 100;/*para que pase por arriba de otros objetos*/
+    position: fixed; /*mi barra header estatica arriba mientras me muevo por la pagina*/
+    display:flex; /*los elementos uno al lado del otro*/
+    justify-content: space-between;/*espacio entre los objetos(logo y links/referencias)*/
+    width: 100%;/*que ocupe todo el ancho de la pantalla*/
+    padding: 7px 8px;/*un poco de espacio para que no quede centrado en las esquinas*/  
+    box-sizing: border-box;/*el padding no me afecta el ancho total*/
+    background-color: black;
+}
+.logo{
+    width:100px;/*establecemos la imagen a 100px*/
+    height: auto;/*ajuste automatico del alto para no deformar la imagen*/
+}
+.header-nav{
+    display: flex;/*en la barra de navegacion la direccion de los links seria uno al lado del otro*/
+    gap: 25px;/*separamos los links/referencias*/
+    align-items: center; /*centramos */
+}
+.header-nav a{
+    color: white;
+    text-decoration: none;/*sacamos el subrayado cuando son visitados*/    
+}
+
+.present{
+    height: 100vh;/*el alto de la foto de presentacion seria el 100% de la pantalla(mas apreciable sin la barra de navegacion)*/ 
+    background: url("assets/hero.jpg");
+    background-position: center;/*posicion central*/ 
+    background-size: cover;/*rellena el div*/
+    display: flex;/*volvemos flex al titulo*/
+    align-items: end;/*alineamos al final de la columna*/
+    justify-content: end;/*alineamos al final de la fila*/
+    cursor:pointer;/*que el mouse indique que se puede clickear*/
+}
+.sections{
+    text-align: center;/*los items dentro de section alineados*/
+
+}
+.superdeportivos,.deportivos{
+    min-height: 100vh;/*queremos que ocupe el 100% de pantalla en estos 2 sectores*/
+    font-size: 20px;
+}
+.cat{
+    display: flex;
+    flex-wrap: wrap;/*direccion de los items, siguen abajo si no entran en pantalla*/
+    gap: 15px;/*alejamos los items*/
+    justify-content: center;/*centramos las cards de todo el catalogo*/
+}
+ 
+.card{
+    cursor: pointer;/*que el mouse indique que se puede clickear*/
+    width: 30%;/*ocupa cada uno 30 de ancho de pantalla(3 tarjetas 90 sin contar su espacio)*/
+    border: 1px solid;/*borde*/
+    border-color: rgb(244, 238, 238);
+    border-radius: 12px;/*curvatura*/
+    color:white;
+}
+.card img{
+    width: 100%;/*queremos que ocupe el 100 en cada tarjeta*/
+}
+.card-text{
+    font-size: 20px;/*tamaño de las letras de las cards*/
+}
+.card.activa {
+    box-shadow: 0 2px 2px 2px rgba(250, 129, 24, 0.628);/*resaltamos la tarjeta cuando dan click*/
+}
+.foot{
+    padding: 0;
+    width: 100%;/*ocupamos todo el ancho*/
+    background-color: black;
+    color:white;
+
+}
+.foot p{
+    text-align: end;
+    padding-right: 10px;
+    margin: 0;
+    margin-top: 10px;
+}

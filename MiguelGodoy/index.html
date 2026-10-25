@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Supercars Olivos: una selección curada de autos nobles, deportivos y superdeportivos." />
+    <!--Colocamos nombre y logo a nuestra pagina-->
+    <title>Supercars Olivos</title>
+    <link rel="icon" type="image/png" href="assets/icono.png">
+
+    <link rel="stylesheet" href="index.css">
+    <!-- Importación de fuentes Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!--para que el java script cargue en paralelo con la pagina y no antes-->
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <!--Creamos la tipica barra de navegacion con logo y pestañas rapidas-->
+        <div class="header-logo">
+            <img src="assets/icono.png" class="logo">
+        </div>
+        <!--Usamos los "#" para redireccionar rapido a esa seccion-->
+        <nav class="header-nav">
+            <!--En este caso la barra va a ser fija, Home no redirreciona-->
+            <a href="#">Home</a>
+            <a href="#premiums">Superdeportivos</a>
+            <a href="#nobles">Deportivos</a>
+        </nav>
+    </header>
+
+    <main>
+        <!--me parecio interesante agregar un toque diferente a la pagina y tuve que investigar para agregar el audio como tal-->
+        <div class="present">
+            <h2>SuperCars Olivos</h2>
+        </div>
+        <section class="sections">
+            <!--agregamos id para ser redirigidos por la primera barra-->
+            <div class="superdeportivos" id="premiums">
+                <h2>Premiums y Superdeportivos</h2>
+                <p>Para esos amantes de la velocidad, llego la nueva linea de super deportivos que tanto los apasiona.</p>
+                <p>Tenemos planes de cuotas para todos los que quieren su primer super deportivo. Conoce los nuevos modelos de nuestro cat.</p>
+                <strong>+Super +Deportivos.</strong>
+                <div class="cat">
+                    <!--dividi en divs cada imagen con su nombre y les asigne la misma clase para trabajarlos las cards-->
+                    <div class="card">
+                        <img src="assets/premiums-y-superdeportivos/aston-martin-db11.png" alt="aston martin db11">
+                        <div class="card-text">
+                            <p>Aston Martin db11</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/premiums-y-superdeportivos/audi-r8.png" alt="audi r8">
+                        <div class="card-text">
+                            <p>Audi r8</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/premiums-y-superdeportivos/chevrolet-corvette.png" alt="chevrolet corvette">
+                        <div class="card-text">
+                            <p>Chevrolet Corvette</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/premiums-y-superdeportivos/ford-mustang.png" alt="ford mustang">
+                        <div class="card-text">
+                            <p>Ford Mustang</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/premiums-y-superdeportivos/mercedes-benz-amg.png" alt="mercedes benz amg">
+                        <div class="card-text">
+                            <p>Mercedes Benz Amg</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/premiums-y-superdeportivos/porsche-911.png" alt="porsche 911">
+                        <div class="card-text">
+                            <p>Porsche 911</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sections">
+            <!--repetimos el proceso-->
+            <div class="deportivos" id="nobles">
+                <h2>Nobles y Deportivos</h2>
+                <p>Los modelos mas vendidos los tenemos aca</p>
+                <p>Hoy uno de estos puede ser tuyo. La busqueda de eficacia y seguridad se acabo.</p>
+                <strong>+Confort.</strong>
+                <div class="cat">
+                    <div class="card">
+                        <img src="assets/nobles-y-deportivos/audi-a3.png" alt="audi a3">
+                        <div class="card-text">
+                            <p>Audi A3</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/nobles-y-deportivos/chevrolet-cruze.png" alt="chevrolet cruze">
+                        <div class="card-text">
+                            <p>Chevrolet Cruze</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/nobles-y-deportivos/fiat-kronnos.png" alt="fiat kronnos">
+                        <div class="card-text">
+                            <p>Fiat Kronnos</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/nobles-y-deportivos/nissan-sentra.png" alt="nissan sentra">
+                        <div class="card-text">
+                            <p>Nissan Sentra</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/nobles-y-deportivos/toyota-corolla.png" alt="toyota corolla">
+                        <div class="card-text">
+                            <p>Toyota Corolla</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/nobles-y-deportivos/volkswagen-golf.png" alt="volkswagen golf">
+                        <div class="card-text">
+                            <p>Volkswagen Golf</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <p>© 2026 Supercars Olivos</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
